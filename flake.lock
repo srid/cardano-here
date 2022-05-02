@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1649676176,
+        "narHash": "sha256-OWKJratjt2RW151VUlJPRALb7OU2S5s+f0vLj4o1bHM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "a4b154ebbdc88c8498a5c7b01589addc9e9cb678",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "microvm": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1651265669,
+        "narHash": "sha256-xqYqxTqs9lsVsuNiO84vL5Vj4OopwiaaJYdBHc5LRmY=",
+        "owner": "astro",
+        "repo": "microvm.nix",
+        "rev": "f2e659d601ec62dd7ada52e2fe6d870b8d0244ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "astro",
+        "repo": "microvm.nix",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1651310835,
+        "narHash": "sha256-MLk/zsLlbPhwFucxL64Fr+oIrvQC2/76Ap2F7ekbPNI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "fd3e33d696b81e76b30160dfad2efb7ac1f19879",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-21.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "microvm": "microvm",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
